@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+	font-family: 'Montserrat', sans-serif;
+  	
+}
+
+h2{
+	font-size: 28px;
+}
+/* CSS HEADER */
+
+.header .menu{
+	background-color: white;
+}
+.menu #logo{
+    width: 180px;
+    height: 80px;
+}
+
+.menu .container-fluid{
+	background-color: white;
+	padding: 10px 10px;
+	margin: -10px 0px;
+}
+
+.menu .nav-item a{
+	color: #181819; 
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.menu .nav-item a:hover{
+	color: #6d3f19;
+	border-bottom: 2px solid #6d3f19;
+}
+
+.menu .header-navbar-search:hover{
+	border: 3px solid #6d3f19;
+}
+
+.menu .header-navbar .zmdi{
+	margin-left: 30px;
+	font-size: 32px;
+	color: #181819;
+}
+
+.menu .header-navbar .zmdi:hover{
+	color: #6d3f19;
+}
+
+/* CSS HEADER BANNER */
+
+#banner{
+	overflow: hidden;
+}
+
+#banner img{
+    width: 100%;
+    height: auto;
+}
+
+#banner .slider-imgs{
+	display: flex;
+} 
+
+.slider-imgs input{
+	display: none;
+}
+
+#banner .labelslider{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 30px;
+}
+
+.labelslider label{
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #181819;
+	margin-right: 10px;
+}
+
+.labelslider label:hover{
+	background-color: white;
+}
+
+#img1:checked ~#imgslider1{
+	margin-left: -100%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+#img2:checked ~#imgslider2{
+	margin-left: -200%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+#img3:checked ~#imgslider3{
+	margin-left: -300%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+/* CSS CONTAINER */
+
+.container{
+	padding: 0px;
+}
+
+.container .row{
+	margin: 0px;
+}
+
+.container ul{
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.container ul li a img{
+	width: 100%;
+	height: auto;
+}
+
+.container ul li a{
+	text-decoration: none;
+	position: relative;
+}
+
+.container ul li:hover img{
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+	display: block;
+}
+
+.container .img .btn-product{
+	position: absolute;
+	top: 80px;
+	transform: translate(22%);
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.container ul li a:hover .btn-product{
+	opacity: 1;
+}
+
+.container .img .btn-product button{
+	background-color: #181819;
+	width: 50px;
+}
+
+.container .img .btn-product button .zmdi{
+	color: white;
+}
+
+.container .img .btn-product button:hover .zmdi{
+	color: #181819;
+}
+
+.container .product-item-name{
+    font-weight: bold;
+    margin: 15px 0px 10px 0px;
+    color: black;
+	font-size: 15px;
+}
+
+.product-item-name a{
+	text-decoration: none;
+	color: #181819;
+}
+
+.product-item-name a:hover{
+	color: #6d3f19;
+	font-weight: bold;
+}
+
+.product-item-price{
+	font-size: 13px;
+}
+
+.product-item-price-old{
+    color: #181819;
+    text-decoration: line-through;
+}
+
+.product-item-price-current{
+    color: #c92127;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.container .product-item-sale-off{ 
+    height: 38px;
+    width: 55px;
+    background-color: #6d3f19;
+	line-height: 38px;
+    text-align: center;
+	color: white;
+	font-weight: 700;
+	border-radius: 10px;
+}
+
+/* CSS CONTAINER PRODUCT-NEW */
+
+.container .product-new{
+	padding: 0px;
+	margin: 0px;
+}
+
+.product-new h2{
+	margin: 50px 0px 30px 0px;
+}
+
+.product-new ul{
+    height: 350px;
+	padding: 20px;
+	border: 5px solid #e8e6e3; 
+}
+
+.product-new .product-item-sale-off{
+	position: relative;
+    bottom: 310px;
+    left: 190px;
+}
+
+/* CSS CONTAINER PRODUCT-SELLING */
+
+.container .product-selling{
+	padding: 0px;
+	font-size: 14px;
+}
+
+.product-selling h2{
+	margin: 50px 0px 30px 0px;
+}
+
+.product-selling .label-product{
+	background-color: #e8e6e3;
+	width: 210px;
+	height: 75px;
+}
+
+.label-product h5{
+	padding: 10px;
+}
+
+.label-product .product-item-price{
+	padding-left: 10px;
+}
+
+/* CSS CONTAINER PRODUCT-SELLING-LEFT */
+
+.product-selling-left{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 2px solid #e8e6e3;
+}
+
+.product-selling-left{
+	list-style-type: none;
+	border: 5px solid #e8e6e3; 
+}
+
+.product-selling-left .label-product{
+	position: relative;
+	top: 80px;
+	left: 10px;
+}
+
+.product-selling-left .product-item-sale-off{
+	position: relative;
+    bottom: 710px;
+    left: 485px;
+}
+
+.product-selling-left ul li a{
+	text-decoration: none;
+	position: relative;
+}
+
+.product-selling-left ul li:hover img{
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+	display: block;
+}
+
+.product-selling-left .btn-product{
+	position: absolute;
+	top: 300px;
+	transform: translate(130%);
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.product-selling-left ul li a:hover .btn-product{
+	opacity: 1;
+}
+
+.product-selling-left .btn-product button{
+	background-color: #181819;
+	width: 50px;
+}
+
+.product-selling-left .btn-product button .zmdi{
+	color: white;
+}
+
+.product-selling-left .btn-product button:hover .zmdi{
+	color: #181819;
+}
+
+/* CSS CONTAINER PRODUCT-SELLING-RIGHT */
+
+.product-selling-right{
+	padding: 0px;
+}
+
+.product-selling-right ul{
+	padding: 0px;
+	border: 5px solid #e8e6e3;
+}
+
+.product-selling-right .label-product{
+	position: relative;
+	bottom: 10px;
+	left: 10px;
+}
+
+.product-selling-right .product-item-sale-off{
+	position: relative;
+    bottom: 335px;
+    left: 200px;
+}
+
+.product-selling-right ul li a{
+	text-decoration: none;
+	position: relative;
+}
+
+.product-selling-right ul li:hover img{
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+	display: block;
+}
+
+.product-selling-right .btn-product{
+	position: absolute;
+	top: 100px;
+	transform: translate(38%);
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.product-selling-right ul li a:hover .btn-product{
+	opacity: 1;
+}
+
+.product-selling-right .btn-product button{
+	background-color: #181819;
+	width: 50px;
+}
+
+.product-selling-right .btn-product button .zmdi{
+	color: white;
+}
+
+.product-selling-right .btn-product button:hover .zmdi{
+	color: #181819;
+}
+
+/* CSS CONTAINER INFORMATION */
+
+.container .info{
+	padding: 0px;
+	font-size: 15px;
+	margin: 50px 0px;
+	height: 550px;
+} 
+
+.info h2{
+	text-align: center;
+	margin: 50px 0px 30px 0px;
+}
+
+.info div{
+	padding: 0px;
+}
+
+.info-left img{
+	width: 100%;
+	height: 69%;
+	padding-right: 20px;
+}
+
+.info-left a{
+	text-decoration: none;
+	color: #181819;
+}
+
+.info-left p{
+	position: relative;
+	bottom: 240px;
+	padding: 0px 50px 0px 30px;
+	font-weight: 600;
+	text-align: justify;
+	
+}
+
+.info-right{
+	text-align: center;
+	border: 1.5px solid #e8e6e3;;
+	height: 376px;
+}
+
+.info-right ul{
+	padding: 40px 20px 0px 20px;
+}
+
+.info-right h3{
+	font-size: 22px;
+}
+
+.info-right span{
+	color: red;
+	font-size: 36px;
+}
+
+/* CSS FOOTER SALEOFF */
+
+.footer .saleoff{
+	height: 220px;
+	padding: 0px;
+}
+
+.footer .saleoff ul{
+	list-style-type: none;
+	height: 100%;
+	text-align: center;
+}
+
+.footer .saleoff ul li{
+	position: relative;
+	top: 80px;
+}
+
+.saleoff .freeship {
+	background-color: #6d3f19;
+	color: white;
+}
+
+.saleoff .saleoff-10{
+	background-color: #e8e6e3;
+}
+
+.saleoff .saleoff-30{
+	background-color: #181819;
+	color: white;
+}
+
+/* CSS FOOTER MENU */
+
+.footer .menu{
+	padding: 20px;
+	background-color: #e8e6e3;
+	padding: 20px 0px 20px 30px;
+	margin-top: 80px;
+}
+
+.footer-left{
+	overflow: hidden;
+}
+
+.footer-right {
+	margin: 0px;
+	padding: 0px;
+}
+
+.zmdi-facebook-box{
+    margin-right: 10px;
+    color: #1298f6;
+}
+
+.zmdi-instagram{
+	color: #febf01;
+}
+
+.footer-right-service{
+	padding-left: 70px;
+}
+
+.footer-right h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: -5px;
+}
+
+.footer-right h3 span{
+	font-weight: 400px;
+}
+
+.footer-right ul{
+	list-style-type: none;
+	padding-left: 0px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.footer-right ul li{
+	margin-bottom: 10px;
+}
+
+.footer-right a{
+	text-decoration: none;
+	color: #181819;
+}
+
+.footer ul li a:hover{
+	color: #6d3f19;
+    position: relative;
+    left: 20px;
+	font-weight: bold;
+}
+
+.footer #logo{
+	width: 100px;
+	height: auto;
+}
+
+.footer p{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.footer #logo-bo-cong-thuong{
+	width: 100px;
+	height: auto;
+}
+
+.footer #logo{
+	width: 180px;
+    height: 80px;
+}
+
+.footer-right .zmdi{
+    margin-right: 10px;
+    font-size: 15px;
+}
